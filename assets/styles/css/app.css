@@ -6731,5 +6731,21 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
+body {
+  font-family: 'Lato', sans-serif; }
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
+  text-transform: capitalize; }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-clear a.navbar-brand {
+    color: #535353 !important;
+    font-size: 30px;
+    letter-spacing: -2px;
+    text-transform: uppercase; }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-clear a#link {
+    color: #535353 !important;
+    text-transform: none;
+    text-decoration: underline; }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-clear a.navbar-light .navbar-nav .nav-link {
+    color: red !important; }
 
 /*# sourceMappingURL=app.css.map */

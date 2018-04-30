@@ -1,0 +1,20 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
+  text-transform: capitalize;
+
+  a.navbar-brand {
+    color: rgb(83, 83, 83) !important;
+    font-size: 30px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+  a#link {
+    color: rgb(83, 83, 83) !important;
+    text-transform: none;
+    text-decoration: underline;
+  }
+
+  a.navbar-light .navbar-nav .nav-link{
+    color: red !important;
+  }
+}
