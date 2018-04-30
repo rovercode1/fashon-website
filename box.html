@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#main {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+
+/* Standard syntax */
+#main #a{flex-grow: 1; background:red;transition:1s;}
+#main #b{flex-grow: 1;background:yellow;transition:1s;}
+#main #c{flex-grow: 1;background:blue;transition:1s;}
+#main #d{flex-grow: 1;background:green;transition:1s;}
+
+#main #a:hover{flex-grow: 3;transition:1s;}
+#main #b:hover{flex-grow: 3;transition:1s;}
+#main #c:hover{flex-grow: 3;transition:1s;}
+#main #d:hover{flex-grow: 3;transition:1s;}
+
+</style>
+</head>
+<body>
+
+<div id="main">
+  <div id="a"></div>
+  <div id="b"></div>
+  <div id="c"></div>
+  <div id="d"></div>
+</div>
+</body>
+</html>

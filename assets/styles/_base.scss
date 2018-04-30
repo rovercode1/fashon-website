@@ -1,3 +1,49 @@
 body{
   font-family: 'Lato', sans-serif;
 }
+
+.active{
+  color: #979797a8;
+  font-weight: 700;
+}
+
+.container-90{
+  width: 90%;
+  margin:auto;
+  overflow: hidden;
+}
+
+.box{
+  background: rgb(255, 255, 255);
+  margin: 4px 2px;
+  height:700px;
+}
+.col-lg-3.col-md-6.col-sm-6.col-xs-12 {
+  padding: 0;
+}
+
+.box-main{
+  background: url("../../img/men-before.jpg");
+  display: flex;
+  background-position: top;
+  background-size: cover;
+  margin: 4px 2px;
+  height:700px; 
+   align-items: center;
+}
+
+.box-main:hover{
+  background: url("../../img/men.jpg");
+  background-position: top;
+  background-size: cover;
+
+  margin: 4px 2px;
+  height:700px;
+  display: flex;
+}
+
+.box1{
+  flex: 1;
+}
+
+#hat{flex-grow: 9}

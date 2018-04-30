@@ -6734,6 +6734,46 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: 'Lato', sans-serif; }
 
+.active {
+  color: #979797a8;
+  font-weight: 700; }
+
+.container-90 {
+  width: 90%;
+  margin: auto;
+  overflow: hidden; }
+
+.box {
+  background: white;
+  margin: 4px 2px;
+  height: 700px; }
+
+.col-lg-3.col-md-6.col-sm-6.col-xs-12 {
+  padding: 0; }
+
+.box-main {
+  background: url("../../img/men-before.jpg");
+  display: flex;
+  background-position: top;
+  background-size: cover;
+  margin: 4px 2px;
+  height: 700px;
+  align-items: center; }
+
+.box-main:hover {
+  background: url("../../img/men.jpg");
+  background-position: top;
+  background-size: cover;
+  margin: 4px 2px;
+  height: 700px;
+  display: flex; }
+
+.box1 {
+  flex: 1; }
+
+#hat {
+  flex-grow: 9; }
+
 nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
   text-transform: capitalize; }
   nav.navbar.navbar-expand-lg.navbar-light.bg-clear a.navbar-brand {
@@ -6747,5 +6787,19 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
     text-decoration: underline; }
   nav.navbar.navbar-expand-lg.navbar-light.bg-clear a.navbar-light .navbar-nav .nav-link {
     color: red !important; }
+
+.nav-link.navbar-block {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  box-shadow: 5px 8px 6px 1px #92929231;
+  transition-timing-function: linear;
+  transition: 0.2s; }
+  .nav-link.navbar-block a {
+    padding: 5px 30px; }
+
+a.nav-link.navbar-block:hover {
+  color: #444444 !important;
+  font-weight: 500;
+  box-shadow: 5px 8px 6px 1px #929292a8; }
 
 /*# sourceMappingURL=app.css.map */
