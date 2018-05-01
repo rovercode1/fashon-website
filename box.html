@@ -52,16 +52,27 @@
   </header>
   <script src="node_modules/jquery.min.js"></script>
 <script>
-  var first = document.getElementById("a");
-  var second = document.getElementById("b");
-  var third = document.getElementById("c");
-  var forth = document.getElementById("d");
+  var pdiv = document.querySelector("#main")
   //Check size of window
   var bodyWidth =null;
 window.onresize = function() {
-	bodyWidth=$("body").width();
-	console.log(bodyWidth)
+  bodyWidth=$("body").width();
+    if(bodyWidth < 900){
+      //alert("Done!")
+  }
 }
+for(i = 0; i < pdiv.children.length; i++){
+  pdiv.children[i].addEventListener("click", function(){
+    if(bodyWidth < 900){
+      alert("More")
+    }else{
+      alert("Less!")
+    }
+  }
+ )
+}
+
+
 </script>
 
 </body> 
