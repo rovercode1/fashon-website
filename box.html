@@ -56,7 +56,12 @@
   var second = document.getElementById("b");
   var third = document.getElementById("c");
   var forth = document.getElementById("d");
-
+  //Check size of window
+  var bodyWidth =null;
+window.onresize = function() {
+	bodyWidth=$("body").width();
+	console.log(bodyWidth)
+}
 </script>
 
 </body> 
