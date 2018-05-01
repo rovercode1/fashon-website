@@ -3,74 +3,90 @@
 <head>
 <style>
   
+body{
+  height: 100%;
+}
+
+  #head{
+    height:inherit;
+    width: 100%;
+  }
+
   #main {
     width: 100%;
     margin: auto;
     overflow: hidden;
-    height: 800px;
+    height: inherit;
     display: flex;
     flex-wrap: wrap;
   }
   
+  /* Change colours in javascript*/
+  #main #a{width:25%; background:rgba(0, 0, 0, 0.431);}
+  #main #b{width:25%;background:rgb(255, 0, 0);}
+  #main #c{width:25%;background:rgba(21, 255, 0, 0.411);}
+  #main #d{width:25%;background:rgba(255, 0, 0, 0.363);}
   
-  #main #a{width:25%;; background:rgba(0, 0, 0, 0.431);}
-  #main #b{width:25%;;background:rgb(255, 0, 0);}
-  #main #c{width:25%;;background:rgba(21, 255, 0, 0.411);}
-  #main #d{width:25%;;background:rgba(255, 0, 0, 0.363);}
-  
-  #main #a:hover{transition:1s;}
-  #main #b:hover{transition:1s;}
-  #main #c:hover{transition:1s;}
-  #main #d:hover{transition:1s;}  
-  
-  @media(max-width:1170px){
-    #main #a{width:50%}
-    #main #b{width:50%}
-    #main #c{width:50%}
-    #main #d{width:50%}
+  @media(max-width:1370px){
+  #main #a{width:50%}
+  #main #b{width:50%}
+  #main #c{width:50%}
+  #main #d{width:50%}
 }
 
-@media(max-width:600px){
-  #main #a{width:100%;height:200px;}
-  #main #b{width:100%;height:200px;}
-  #main #c{width:100%;height:200px;}
-  #main #d{width:100%;height:200px;}
+@media(max-width:660px){
+  #main{flex-direction: column;}
+  #main #a{width:100%}
+  #main #b{width:100%}
+  #main #c{width:100%}
+  #main #d{width:100%}
 }
   
 </style>
 </head>
 <body>
-  <header id="head">
-    <div>
-      <div id="main">
-        <div id="a"></div>
-        <div id="b"></div>
-        <div id="c"></div>
-        <div id="d"></div>
-      </div>
+    <div id="main">
+      <div id="a"></div>
+      <div id="b"></div>
+      <div id="c"></div>
+      <div id="d"></div>
     </div>
-  </header>
+
   <script src="node_modules/jquery.min.js"></script>
 <script>
   var pdiv = document.querySelector("#main")
   //Check size of window
-  var bodyWidth =null;
+  var bodyWidth =0;
 window.onresize = function() {
-  bodyWidth=$("body").width();
-    if(bodyWidth < 900){
-      //alert("Done!")
+bodyWidth=$("body").width();
+console.log(bodyWidth)
+  for(i = 0 ; i < pdiv.children.length; i++){
+    if(bodyWidth >= 1370){
+      pdiv.children[i].style.height="900px"
+    }
+    else if(bodyWidth < 1369 && bodyWidth >627){
+      pdiv.children[i].style.height="600px"
+    }else if(bodyWidth <=687){
+      pdiv.children[i].style.height="300px"
+    }
   }
 }
-for(i = 0; i < pdiv.children.length; i++){
+
+/*for(i = 0; i < pdiv.children.length; i++){
   pdiv.children[i].addEventListener("click", function(){
-    if(bodyWidth < 900){
-      alert("More")
+    //Change size of clicked box
+    this.style.height="600px"
+    if(bodyWidth < 1170 && bodyWidth > 600){
+      this.style.height="600px"
+      alert("6")
+    }else if(bodyWidth < 600){
+      this.style.height="400px"
     }else{
-      alert("Less!")
+      alert("4")
     }
   }
  )
-}
+}*/
 
 
 </script>
