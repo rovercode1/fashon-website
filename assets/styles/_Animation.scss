@@ -1,0 +1,18 @@
+#main {
+  height: 500px;
+
+  display: flex;
+}
+
+
+/* Standard syntax */
+
+#main #a{flex-grow: 1; background:url("../../img/mens.png");transition:1s;background-size: cover;}
+#main #b{flex-grow: 1;background:yellow;transition:1s;}
+#main #c{flex-grow: 1;background:blue;transition:1s;}
+#main #d{flex-grow: 1;background:green;transition:1s;}
+
+#main #a:hover{flex-grow: 3;transition:1s;}
+#main #b:hover{flex-grow: 3;transition:1s;}
+#main #c:hover{flex-grow: 3;transition:1s;}
+#main #d:hover{flex-grow: 3;transition:1s;}

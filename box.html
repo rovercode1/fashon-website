@@ -2,37 +2,60 @@
 <html>
 <head>
 <style>
-#main {
-    width: 95%;
+  
+  #main {
+    width: 100%;
     margin: auto;
     overflow: hidden;
-    height: 100px;
-    border: 1px solid #c3c3c3;
-    display: -webkit-flex; /* Safari */
+    height: 800px;
     display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  #main #a{width:25%;; background:rgba(0, 0, 0, 0.431);}
+  #main #b{width:25%;;background:rgb(255, 0, 0);}
+  #main #c{width:25%;;background:rgba(21, 255, 0, 0.411);}
+  #main #d{width:25%;;background:rgba(255, 0, 0, 0.363);}
+  
+  #main #a:hover{transition:1s;}
+  #main #b:hover{transition:1s;}
+  #main #c:hover{transition:1s;}
+  #main #d:hover{transition:1s;}  
+  
+  @media(max-width:1170px){
+    #main #a{width:50%}
+    #main #b{width:50%}
+    #main #c{width:50%}
+    #main #d{width:50%}
 }
 
-
-/* Standard syntax */
-#main #a{flex-grow: 1; background:red;transition:1s;}
-#main #b{flex-grow: 1;background:yellow;transition:1s;}
-#main #c{flex-grow: 1;background:blue;transition:1s;}
-#main #d{flex-grow: 1;background:green;transition:1s;}
-
-#main #a:hover{flex-grow: 3;transition:1s;}
-#main #b:hover{flex-grow: 3;transition:1s;}
-#main #c:hover{flex-grow: 3;transition:1s;}
-#main #d:hover{flex-grow: 3;transition:1s;}
-
+@media(max-width:600px){
+  #main #a{width:100%;height:200px;}
+  #main #b{width:100%;height:200px;}
+  #main #c{width:100%;height:200px;}
+  #main #d{width:100%;height:200px;}
+}
+  
 </style>
 </head>
 <body>
+  <header id="head">
+    <div>
+      <div id="main">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+        <div id="d"></div>
+      </div>
+    </div>
+  </header>
+<script>
+  var first = document.getElementById("a");
+  var second = document.getElementById("b");
+  var third = document.getElementById("c");
+  var forth = document.getElementById("d");
+</script>
 
-<div id="main">
-  <div id="a"></div>
-  <div id="b"></div>
-  <div id="c"></div>
-  <div id="d"></div>
-</div>
 </body>
 </html>

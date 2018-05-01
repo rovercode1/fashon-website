@@ -6731,6 +6731,48 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
+#main {
+  height: 500px;
+  display: flex; }
+
+/* Standard syntax */
+#main #a {
+  flex-grow: 1;
+  background: url("../../img/mens.png");
+  transition: 1s;
+  background-size: cover; }
+
+#main #b {
+  flex-grow: 1;
+  background: yellow;
+  transition: 1s; }
+
+#main #c {
+  flex-grow: 1;
+  background: blue;
+  transition: 1s; }
+
+#main #d {
+  flex-grow: 1;
+  background: green;
+  transition: 1s; }
+
+#main #a:hover {
+  flex-grow: 3;
+  transition: 1s; }
+
+#main #b:hover {
+  flex-grow: 3;
+  transition: 1s; }
+
+#main #c:hover {
+  flex-grow: 3;
+  transition: 1s; }
+
+#main #d:hover {
+  flex-grow: 3;
+  transition: 1s; }
+
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -6744,7 +6786,6 @@ body {
   overflow: hidden; }
 
 .box {
-  background: white;
   margin: 4px 2px;
   height: 700px; }
 
@@ -6770,9 +6811,6 @@ body {
 
 .box1 {
   flex: 1; }
-
-#hat {
-  flex-grow: 9; }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
   text-transform: capitalize; }
