@@ -74,12 +74,14 @@
   flex: 1;
 }
 
-@media(max-width:700px){
+@media(max-width:1300px){
   .contain{
-     flex-direction: column; 
+    flex-direction: column; 
+    height: 900px
   }
   .inner-text{
     font-size: 10px;
+    margin: 17px 0px;
   }
   .box1{
     display:none;
