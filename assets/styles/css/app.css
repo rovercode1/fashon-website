@@ -6819,6 +6819,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
     font-size: 30px;
     letter-spacing: -2px;
     text-transform: uppercase; }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-clear a.navbar-brand:hover {
+    color: black; }
   nav.navbar.navbar-expand-lg.navbar-light.bg-clear a#link {
     color: #535353 !important;
     text-transform: none;
@@ -6851,7 +6853,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
 .contain {
   width: 100%;
   height: 750px;
-  background: #929292;
+  background-image: url("../assets/img/group.jpeg");
   background-size: cover;
   display: flex;
   flex-direction: column; }
@@ -6913,7 +6915,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
   flex: 1; }
 
 @media (max-width: 1300px) {
-  .contain {
+  .box-flex {
     flex-direction: column;
     height: 900px; }
 

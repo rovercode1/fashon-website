@@ -8,6 +8,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-clear {
     text-transform: uppercase;
 }
 
+a.navbar-brand:hover{
+  color: rgb(0, 0, 0);
+}
+
   a#link {
     color: rgb(83, 83, 83) !important;
     text-transform: none;
