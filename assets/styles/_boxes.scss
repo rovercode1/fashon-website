@@ -7,10 +7,17 @@
 
 .contain{
   width:100%;
-  height:550px;
+  height:750px;
   background:rgb(146, 146, 146);
   background-size:cover; 
   display:flex;
+  flex-direction: column;
+}
+
+.box-flex{
+  display: flex;
+  flex-direction: row;
+  height: 900px;
 }
 
 .outside{

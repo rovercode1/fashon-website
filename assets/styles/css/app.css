@@ -6847,10 +6847,16 @@ a.nav-link.navbar-block:hover {
 
 .contain {
   width: 100%;
-  height: 550px;
+  height: 750px;
   background: #929292;
   background-size: cover;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+
+.box-flex {
+  display: flex;
+  flex-direction: row;
+  height: 900px; }
 
 .outside {
   height: 100%;

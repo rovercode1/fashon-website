@@ -7,26 +7,26 @@ var idKey = {
   a:{
     id:"a",
     color:"rgba(195, 100, 144, 0.356)",
-    img:"url(../../img/left-black.jpeg)",
+    img:"url(assets/img/left-black.jpeg)",
 
   },
   b:{
     id:"b",
     color:"rgba(200, 134, 86, 0.5)",
-    img:"url(img/left-woman.jpeg)",
+    img:"url(assets/img/left-woman.jpeg)",
 
 
   },
   c:{
     id:"c",
     color:"rgba(151, 232, 154, 0.5)",
-    img:"url(img/right-black.jpeg)",
+    img:"url(assets/img/right-black.jpeg)",
     
   },
   d:{
     id:"d",
     color:"rgba(151, 194, 240, 0.5)",
-    img:"url(img/right-white.jpeg)",
+    img:"url(assets/img/right-white.jpeg)",
 
   }
 }
