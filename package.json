@@ -1,7 +1,7 @@
 {
   "name": "fashion-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Made with bootstrap and added features with javascript",
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^4.1.0",
@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/rovercode1/fashon-website/issues"
   },
-  "homepage": "https://github.com/rovercode1/fashon-website#readme"
+  "homepage": "https://github.com/rovercode1/fashon-website#readme",
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "javascript",
+    "website",
+    "HTML5",
+    "SASS"
+  ]
 }
