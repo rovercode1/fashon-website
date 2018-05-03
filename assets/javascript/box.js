@@ -45,6 +45,7 @@ function v2(){
         this.style.background=idKey[this.id].color;
         bg.style.backgroundImage=idKey[this.id].img;
         bg.style.transition="0.8s";
+        bg.style.backgroundPosition="top";
         // Change text colour on certain backgrounds
       }
     })
